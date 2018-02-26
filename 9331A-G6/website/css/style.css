@@ -14,17 +14,17 @@ body {
 .banner h1 {
     position: absolute;
     color: #B8860B;
-    font-family: "Open Sans";
+    font-family: great;
     font-size: 100px;
     margin-left: 80px;
     margin-top: 300px;
     animation: fade-in 11s ease;
     transition: 1s ease;
+    letter-spacing: 9px;
 }
 
 header h1 {
     color: #B8860B;
-    font-family: "Open Sans";
     font-size: 30px;
     text-align: center;
     animation: fade-in 11s ease;
@@ -60,6 +60,20 @@ nav a:hover {
     src: url("fonts/Open_Sans/OpenSans-Regular.ttf");
 }
 
+@font-face {
+	font-family: "great";
+	src: url("fonts/PoiretOne-Regular.ttf");
+}
+
+@font-face {
+	font-family: "ques";
+	src: url("fonts/Questrial-Regular.ttf");
+}
+
+@font-face {
+	font-family: "sati";
+	src: url("fonts/Satisfy-Regular.ttf");
+}
 @keyframes fade-in {
     0% { opacity: 0; }
     100 { opacity: 1; }

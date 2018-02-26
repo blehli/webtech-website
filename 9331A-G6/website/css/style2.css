@@ -1,18 +1,19 @@
 body {
     margin: 0;
-    background-color: #95FFFE;
+    background-color: #FAFAD2;
 }
 
 .title {
     top: 0;
     height: 100px;
-    background-color: black;
+    background-color: #BDB76B;
     position:relative;
 }
 
 .title h1 {
+	text-decoration:none;
     text-align: center;
-    color: #95FFFE;
+    color: white;
     font-family: "Open Sans";
 }
 
@@ -24,7 +25,10 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #00ccc9;
+    background-color: #EEE8AA;
+	font-size:20px;
+	font-weight:bold;
+	text-shadow: 1px 1px #5D6D7E; 
 }
 
 .menu_bar li {
@@ -40,11 +44,11 @@ body {
 }
 
 .menu_bar li a:hover:not(.active) {
-    background-color: #009996;
+    background-color: #FFE4B5;
 }
 
 .active {
-    background-color: #009996;
+    background-color: #FFE4B5;
 }
 
 p.head{

@@ -4,14 +4,14 @@ body {
     color: white;
 }
 
-.hero-banner {
+.banner {
     background-color: black;
     height: 100vh;
     width: 100%;
     z-index: 1;
 }
 
-.hero-banner h1 {
+.banner h1 {
     position: absolute;
     color: #95FFFE;
     font-family: "Open Sans";
@@ -63,5 +63,4 @@ nav a:hover {
 @keyframes fade-in {
     0% { opacity: 0; }
     100 { opacity: 1; }
-}
 }

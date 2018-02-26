@@ -67,3 +67,24 @@ font-style:Veranda;
 font-size:15px;
 position:relative;
 }
+
+.about {
+    text-align: center;
+    font-size: 20px;
+}
+
+.about img {
+    height: 300px;
+    width: 350px;
+    border-radius: 25px;
+}
+
+.about h3 {
+    color: black;
+    font-family: "Open Sans";
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/Open_Sans/OpenSans-Regular.ttf");
+}

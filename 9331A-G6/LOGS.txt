@@ -96,6 +96,36 @@ tyuyuiertuio committed 16 hours ago
 Fixed and added last changes to index.html
 @tyuyuiertuio
 tyuyuiertuio committed 16 hours ago
+
+Commits on Feb 27, 2018
+
+added peereval.jpg
+@blehli
+blehli committed a minute ago
+
+added fonts
+@blehli
+blehli committed 15 minutes ago
+
+index color
+Delfin Cachin III
+Delfin Cachin III committed 34 minutes ago
+ 
+added some contents in http.html
+@blehli
+blehli committed an hour ago
+ 
+changed color scheme
+Delfin Cachin III
+Delfin Cachin III committed an hour ago
+ 
+fixed lower part of html.html
+@blehli
+blehli committed 2 hours ago
+ 
+removed url.html
+Delfin Cachin III
+Delfin Cachin III committed 3 hours ago
  
 NOTES: 
 * The commit made by LOUEL MATTEW LAGASCA was made by DELFIN CACHIN III, the reason behind this is that, Mr. Cachin did not notice that the account of Mr. Lagasca is the one that is logged in on his git bash.

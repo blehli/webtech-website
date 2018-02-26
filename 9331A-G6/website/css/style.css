@@ -46,7 +46,8 @@ nav a {
     color: #95FFFE;
     transition: 0.5s;
     animation: fade-in 5s ease-in;
-    font-size: 20px;
+    font-size: 75px;
+	text-decoration: none;
 }
 
 nav a:hover {
@@ -63,5 +64,4 @@ nav a:hover {
     0% { opacity: 0; }
     100 { opacity: 1; }
 }
-
 }

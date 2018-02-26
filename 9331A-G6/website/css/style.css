@@ -5,7 +5,7 @@ body {
 }
 
 .banner {
-    background-color: black;
+    background-color:#FAFAD2;
     height: 100vh;
     width: 100%;
     z-index: 1;
@@ -13,7 +13,7 @@ body {
 
 .banner h1 {
     position: absolute;
-    color: #95FFFE;
+    color: #B8860B;
     font-family: "Open Sans";
     font-size: 100px;
     margin-left: 80px;
@@ -23,7 +23,7 @@ body {
 }
 
 header h1 {
-    color: #f90388;
+    color: #B8860B;
     font-family: "Open Sans";
     font-size: 30px;
     text-align: center;
@@ -43,7 +43,7 @@ nav {
 }
 
 nav a {
-    color: #95FFFE;
+    color: #B8860B;
     transition: 0.5s;
     animation: fade-in 5s ease-in;
     font-size: 75px;
@@ -51,7 +51,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #08c3e6;
+    color:  #FFE4B5;
     margin-left: 5px;
 }
 

@@ -10,12 +10,21 @@ body {
     position:relative;
 }
 
-.title h1 {
+.title a {
 	text-decoration:none;
-    text-align: center;
     color: white;
     font-family: "Open Sans";
+	font-size:45px;
+	transition: 0.5s;
+    animation: fade-in 5s ease-in;
+	margin-left: 5px;
 }
+
+.title a :hover{
+	color:  #FFE4B5;
+}
+
+
 
 .menu_bar ul {
     width: 100%;

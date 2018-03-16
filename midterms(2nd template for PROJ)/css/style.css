@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+.banner {
+    background-color:#FAFAD2;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+
+.banner h1 {
+    position: absolute;
+    color: #B8860B;
+    font-family: great;
+    font-size: 100px;
+    margin-left: 80px;
+    margin-top: 300px;
+    animation: fade-in 11s ease;
+    transition: 1s ease;
+    letter-spacing: 9px;
+}
+
+header h1 {
+    color: #B8860B;
+    font-size: 30px;
+    text-align: center;
+    animation: fade-in 11s ease;
+    transition: 1s ease;
+}
+
+nav {
+    position: fixed;
+    top:0;
+    right: 0;
+    font-family: "Open Sans";
+    margin-top: 60vh;
+    margin-right: 50px;
+    padding: 30px;
+    z-index: 3;
+}
+
+nav a {
+    color: #B8860B;
+    transition: 0.5s;
+    animation: fade-in 5s ease-in;
+    font-size: 75px;
+	text-decoration: none;
+}
+
+nav a:hover {
+    color:  #FFE4B5;
+    margin-left: 5px;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/Open_Sans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+	font-family: "great";
+	src: url("fonts/PoiretOne-Regular.ttf");
+}
+
+@font-face {
+	font-family: "ques";
+	src: url("fonts/Questrial-Regular.ttf");
+}
+
+@font-face {
+	font-family: "sati";
+	src: url("fonts/Satisfy-Regular.ttf");
+}
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100 { opacity: 1; }
+}

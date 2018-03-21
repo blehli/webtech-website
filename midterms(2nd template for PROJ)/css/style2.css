@@ -9,10 +9,7 @@ body{
 nav{
 	width: 100%;
 }
-.titletext{
-	
-}
-ul{
+nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -20,11 +17,11 @@ ul{
 	background-color:#BDB76B;
 	}
 
-li{
+nav li{
     float: left;
 	}
 
-li a{
+nav li a{
     display: block;
     color: white;
 	font-family:Bold;
@@ -36,9 +33,9 @@ li a{
 
 	}
 
-li a:hover{
+nav li a:hover{
     background-color: #CC9900;
-`}
+}
 
 /*dropdown*/
 .dropicon{

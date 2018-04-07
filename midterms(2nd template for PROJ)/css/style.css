@@ -5,7 +5,7 @@ body {
 }
 
 .banner {
-    background-color:#FAFAD2;
+    background-color:#F5F5F5;
     height: 100vh;
     width: 100%;
     z-index: 1;
@@ -13,18 +13,18 @@ body {
 
 .banner h1 {
     position: absolute;
-    color: #B8860B;
-    font-family: great;
+    color: #696969;
+    font-family: Regular;
     font-size: 100px;
     margin-left: 80px;
-    margin-top: 300px;
+    margin-top: 220px;
     animation: fade-in 11s ease;
     transition: 1s ease;
     letter-spacing: 9px;
 }
 
 header h1 {
-    color: #B8860B;
+    color: red;
     font-size: 30px;
     text-align: center;
     animation: fade-in 11s ease;
@@ -43,7 +43,7 @@ nav {
 }
 
 nav a {
-    color: #B8860B;
+    color: #696969;
     transition: 0.5s;
     animation: fade-in 5s ease-in;
     font-size: 75px;
@@ -51,8 +51,13 @@ nav a {
 }
 
 nav a:hover {
-    color:  #FFE4B5;
+    color:  #F1C40F;
     margin-left: 5px;
+}
+
+@font-face {
+	font-family: "Regular";
+	src: url("fonts/IBMPlexMono-Regular.ttf");
 }
 
 @font-face {

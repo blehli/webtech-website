@@ -2,11 +2,11 @@
 
 body {
     margin: 0;
-    background-color:hsl(192, 15%, 99%);
+    background: url(../pictures/background.png);
 }
 
 .nav, .content {
-    background-color: hsla(28, 80%, 90%, 0.9);
+    background-color: hsla(28, 80%, 90%, 0.7);
     margin: 0% 5%;
     padding: 0.5%;
 }
@@ -21,7 +21,7 @@ h1{
 	text-align: center;
 }
 
-.topnav {
+footer , .topnav {
   overflow: hidden;
   background-color:rgba(89, 111, 130, 0.7);
   text-align:center;

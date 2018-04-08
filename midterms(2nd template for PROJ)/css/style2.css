@@ -28,12 +28,22 @@ article, .textcontent {
 	letter-spacing:1.5px;
 }	
 
-h1{
+.heading a{
+    color: #696969;
 	font-family: Bold;
-	font-size:50px;
-	letter-spacing:2px;
-	color:#696969;
-	text-align: center;
+	padding: 20px 0px;
+    transition: 0.5s;
+    animation: fade-in 0.1s ease-in;
+    font-size: 4vw;
+	text-decoration: none;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.heading a:hover{
+    color:  #F1C40F;
+	
 }
 
 footer , .topnav {
@@ -44,7 +54,7 @@ footer , .topnav {
 
 .topnav a {
   font-family: Regular;
-  letter-spacing:2.2px;
+  letter-spacing:2.5px;
   float: left;
   display:inline;
   color: white;
@@ -52,8 +62,13 @@ footer , .topnav {
   padding: 15px 25px;
   text-decoration: none;
   font-size: 20px;
-
 }
+.topnav a:hover {
+  background-color: #F5F5F5;
+  color: black;
+  animation: fade-in 0.3s ease-in;
+}
+
 #methods p, #methods h3{
     margin: 7.3px 0px;
     padding: 0px 0px;
@@ -77,15 +92,8 @@ h2{
 h3 {
     font-family: regular;
 }
-.navcontainer {
-	
-	
-}
-.topnav a:hover {
-  background-color: #F5F5F5;
-  color: black;
-  
-}
+
+
 
 article{
 	background-color:rgba(89, 111, 130, 0.1);
@@ -110,31 +118,7 @@ article{
 	src: url("fonts/IBMPlexMono-Bold.ttf");
 }
 
-
-
-
-
-
-
-/*WEB PAGE
-p.head{
-font-family:Veranda;
-font-size:40px;
-position:relative;
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100 { opacity: 1; }
 }
-
-p.head1{
-font-style:Veranda;
-font-size:20px;
-position:relative;
-}
-p.head2{
-font-style:Veranda;
-font-size:15px;
-position:relative;
-}
-.content, .about {
-    margin-top: 70px;
-    margin-left: 30px;
-    margin-bottom: 30px;
-}*/

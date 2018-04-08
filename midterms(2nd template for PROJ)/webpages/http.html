@@ -10,227 +10,167 @@
 	<!--ISSUES: -di full ung color pag hinover ung nav bar -->
     
     <body>
-		
-		<nav>
-		   <ul>
-			  <!--SIDE NAV BAR -->
-			  <li class="dropdown">
-				<a class="dropicon">&#x2630;</a>
-				<div class="dropdown-content">
-				  <a href="#C1">HyperText Transfer Protocol</a>
-				  <a href="#C2">HTTP VERSION HISTORY</a>
-				  <a href="#C3">HTTP’s SUPPORT FOR DIFFERENT FUNCTIONALITIES</a>
-				  <a href="#C4">HTTP RESOURCE ADDRESSING</a>
-				  <a href="#C5">HTTP REQUEST METHODS</a>
-				  <a href="#C6">METHOD PROPERTIES</a>
-				  <a href="#C7">HTTP RESPONSE MESSAGE</a>
-				  <a href="#C8">HTTP STATUS CODES</a>
-				  <a href="#C9">HTTP Request Message</a>
-				  <a href="#C10">HTTP Extensions</a>
-				</div>
-			  </li>
-			  <!--SIDE NAV BAR CONTENT END-->
-			    <li><a href="web.html">Web Technologies and WWW</a></li>
-				<li><a href="http.html">HTTP</a></li>
-				<li><a href="html.html">HTML</a></li>
-			    <li>WebTech 2018 &#9668; </li>
-		   </ul>
-		</nav>
-		<!--HTTP CONTENT-->
-        <div class="content">
-            <p class="head" id="C1">HyperText Transfer Protocol</p>
-			<p class="head1"><b>What is HyperText Transfer Protocol (HTTP)?</b></p>
-			<p class="head2">- Medium of Connection for Clients and Servers</p>
-			<p class="head2">- Used to access specific resources</p>
-			<p class="head2">- Developed by W3C at IETF (Internet Engineering Task Force)</p>
-        
-		<p class="head" id="C2">HTTP VERSION HISTORY</p>
-		<p class="head1"><b>HTTP 0.9(1991)</b></p>
-		<p class="head2">-Has only one method (GET)</p>
-		<p class="head2">-The response will only be in HTML</p>
-		<p class="head2">-Single Connection meaning after you connect and get the response, it will automatically be terminated.
-</p>
-
-
-		<p class="head1"><b>HTTP 1 (<a href="https://tools.ietf.org/html/rfc1945">RFC 1945</a>, 1996) </b></p>
-		<p class="head2">-Has three methods (GET, POST, HEAD)</p>
-		<p class="head2">-Single Connection also</p>
-		
-		
-		
-		<p class="head1"><b>HTTP 1.1 ( RFC 2068 1997, RFC 2616 1999, RFC 7230 - <a href="https://tools.ietf.org/html/rfc7235">7235</a> 2014 )</b></p>
-		<p class="head2">-It has different versions of RFC yet the older versions were obsoleted by newer versions</p>
-		<p class="head2">-There are five additional methods from the previous version (GET, POST, HEAD, DELETE, PUT, TRACE, CONNECT, OPTIONS)
-</p>
-	<p class="head2">-Connections can be reused unlike the older versions</p>
-<p class="head2">-Data compression is possible but not in the header</p>
-	
-	
-	
-        <p class="head1"><b>HTTP 2.0 (<a href="https://tools.ietf.org/html/rfc7540">RFC 7540</a> 2015)</b></p>
-		<p class="head2">-It has more storage</p>
-		<p class="head2">-Better Bandwidth</p>
-		<p class="head2">-Improvement on the communication protocol</p>
-		<p class="head2">-Faster internet</p>
-		<p class="head2">-Data compression is possible also in heade</p>
-		<p class="head2">-Server can handle multiple request even though the first request has not yet been responded.</p>
-	
-	<p class="head" id="C3">HTTP’s SUPPORT FOR DIFFERENT FUNCTIONALITIES</p>
-			<p class="head2">-Cache Control</p>
-			<p class="head2">-Content media type (MIME) specifications</p>
-			<p class="head2">-Language and character set specifications</p>
-	<p class="head2">-Content/transfer coding</p>
-	<p class="head2">-Content Negotiation</p>
-	<p class="head2">-Client-Server Protocol negotiation</p>
-	<p class="head2">-Persistent Connection</p>
-	<p class="head2">-Request Pipelining/ multiplexing</p>
-	<p class="head2">-Authentication/Autorization</p>
-	
-	 <p class="head" id="C4">HTTP RESOURCE ADDRESSING</p>
-			<p class="head1">HTTP resources are identified using :</p>
-			<p class="head2">-Scheme (http or https)</p>
-			<p class="head2">-Authority ( user info, host, or port number)</p>
-	<p class="head2">-Path to resource ( static or dynamic resource)</p>
-    <p class="head2">-Query ( may be URL encoded)</p>
-	
-	
-	
-		 <p class="head" id="C5">HTTP REQUEST METHODS</p>
-			<p class="head1"><b>GET</b></p>
-			<p class="head2">-Returns the whole HTML document including the code. </p>
-			<p class="head2">-Its URL is much longer than POST method because the message is included in the URL unlike in POST
-</p>
-	
-			<p class="head1"><b>POST</b></p>
-			<p class="head2">-Same with GET method, but the URL is much shorter since the message is included in the body not in the URL</p>
-			<p class="head2">-Returns an error if you resend the request.</p>
-	
-            <p class="head1"><b>HEAD</b></p>
-			<p class="head2">-Used when requesting for the metadata only without requiring for a payload</p>
-			
-			
-			<p class="head1"><b>PUT </b></p>
-			<p class="head2">-Generates a resource to the server</p>
-			
-			
-			
-            <p class="head1"><b>DELETE</b></p>
-			<p class="head2">-Removes a resource in the server</p>
-			
-            <p class="head1"><b>OPTIONS</b></p>
-			<p class="head2">Lets you know what you are allowed to do</p>
-			
-			
-            <p class="head1"><b>TRACE</b></p>
-			<p class="head2">-Request that returns the received message</p>
-			<p class="head2">-Assures you that your message is not modified</p>
-			
-            <p class="head1"><b>CONNECT </b></p>
-			<p class="head2">-Establishes a secure connection and a tunnel</p>	
-            
-            <p class="head" id="C6">METHOD PROPERTIES (STANDARD METHOD)</p>
-            <p class="head2">Safe methods - there is no change of the state of the server. ( GET, HEAD, OPTIONS, TRACE )</p>
-            <p class="head2">Idempotent methods - even if issued for multiple times, your expectations of what will happen is still the same. ( GET, HEAD, OPTIONS, TRACE, PUT, DELETE )</p>
-            <p class="head2">Cacheable methods - response to a method is allowed to be stored for future reuse. ( GET, HEAD, POST )</p>
-
-            <p class="head" id="C7">HTTP RESPONSE MESSAGE</p>
-            <p class="head2">Status Line ( protocol version, status code, reason phrase)</p>
-            <p class="head2">Message Headers</p>
-            <p class="head2">FOR MORE INFO: <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html">https://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html</a></p>
-            
-            <div class="statusCodes">
-                <p class="head" id="C8">HTTP STATUS CODES</p>
-                <p class="head1">Http status codes are divided into 5 different classes (1xx, 2xx, 3xx, 4xx, and 5xx)</p>
-                <div class="1xx">
-                    <p class="head1"> 1xx - Informational codes</p>
-                    <ul>
-                        <li>100 - Continue</li>
-                        <li>101 - Switching protocols</li>
-                        <li>102 - Processing(WebDAV)</li>
-                    </ul>
-                </div>
-                <div class="2xx">
-                <p class="head1">2xx - Success</p>
-                    <ul>
-                        <li>200 - OK</li>
-                        <li>201 - Created</li>
-                        <li>202 - Accepted</li>
-                        <li>203 - Non-Authoritative Information</li>
-                        <li>204 - No Content</li>
-                        <li>205 - Reset Content</li>
-                        <li>206 - Partial Content</li>
-                        <li>207 -  Multi Status (WebDAV)</li>
-                        <li>226 - IM used (HTTP Delta encoding)</li>
-	                </ul>
-                </div>
-                <div class="3xx">
-                <p class="head1">3xx - Redirection</p>
-                    <ul>
-                        <li>300 - Multiple Choices</li>
-                        <li>301 - Moved Permanently</li>
-                        <li>302 - Found</li>
-                        <li>303 - See Other</li>
-                        <li>304 - Not Modified</li>
-                        <li>305 - Use Proxy</li>
-                        <li>306 - Unused</li>
-                        <li>307 - Temporary Redirect</li>
-                        <li>308 - Permanently Redirect</li>
-	                </ul>
-                </div>
-                <div class="4xx">
-                <p class="head1">4xx - Client error</p>
-                    <ul>
-                    <li>400 - Bad Request</li>
-                    <li>401 - Unauthorized</li>
-                    <li>402 - Payment Required</li>
-                    <li>403 - Forbidden</li>
-                    <li>404 - Not Found</li>
-                    <li>405 - Method Not Allowed</li>
-                    <li>406 - Not Acceptable</li>
-                    <li>407 - Proxy Authentication Required</li>
-                    <li>408 - Request Time-out</li>
-                    <li>409 -  Conflict</li>
-                    <li>410 - Gone </li>
-                    <li>411 - Length Required</li>
-                    <li>412 -Precondition Failed</li>
-                    <li>413 - Request Entity Too Large</li>
-                    <li>414 - Request-URI Too Large</li>
-                    <li>415 - Unsupported Media Type</li>
-                    <li>416 - Requested range not satisfiable</li>
-                    <li>417 - Expectation Failed</li>
-                    <li>418 - “I’m a teapot”</li>
-                    <li>421 - Misdirected Request</li>
-                    <li>422 - Unprocessable Entity (WebDAV)</li>
-                    <li>423 - Locked (WebDAV)</li>
-                    <li>424 - Failed Dependency (WebDAV)</li>
-                    <li>426 - Upgrade Required</li>
-                    <li>428 - Precondition Required</li>
-                    <li>429 - Too Many Requests</li>
-                    <li>431 - Request Header Fields Too Large</li>
-                    <li>451 - Unavailable for Legal Reasons</li>
-                    </ul>
-                </div>
-                <div class="5xx">
-                <p class="head1">5xx - Server error</p>
-                    <ul>
-                        <li>500 - Internal Server Error</li>
-                        <li>501 - Not Implemented</li>
-                        <li>502 - Bad Gateway</li>
-                        <li>503 - Service Unavailable</li>
-                        <li>504 - Gateway Timeout</li>
-                        <li>505 - HTTP version not supported</li>
-                        <li>506 - Variant Also Negotiates</li>
-                        <li>507 - Insufficient Storage</li>
-                        <li>508 - Loop Detected (WebDAV)</li>
-                        <li>510 - Not Extended</li>
-                        <li>511 - Network Authentication Required</li>
-                    </ul>
+	       <div class="content">
+                <h1> &#9668; PRELIMS</h1>
+            </div>
+            <div class="topnav">
+                <a href="web.html">WWW &#9662;</a>
+                <a href="http.html">HTTP &#9662;</a>
+                <a href="html.html">HTML &#9662;</a>
+                <div class="search-container">
                 </div>
             </div>
+
+		<!--HTTP CONTENT-->
+        <div class="content">
             
-            <p class="head" id="C9">HTTP Request Message</p>
-            <p class="head2">Message headers contain the details on how they are going to communicate.</p>
-            <p class="head1">GENERAL HEADER FIELDS (Based in RFC 2616)</p>
+            <h1 class="head">HyperText Transfer Protocol</h1>
+            <p class="textcontent">
+            Hypertext Trandfer Protocol also known as HTTP is a medium that connects Clients and Servers in accessing specific resources. It is developed by World Wide Web Consortium (W3C) at Internet Engineering Task Force (IETF).
+            </p>
+            
+        <!--First Part-->    
+        <section class="topics">
+            <!-- version history-->
+            <article id="history">
+                <h2 class="subhead">Version History</h2>
+                
+                <h3 class="versions">HTTP 0.9 (1991)</h3>
+                <ul>
+                    <li>Has only one method (GET)</li>
+                    <li>The response will only be in HTML</li>
+                    <li>Single Connection meaning after you connect and get the response, it will automatically be terminated.</li>
+                </ul>
+                
+                <h3 class="versions">HTTP 1 (<a href="https://tools.ietf.org/html/rfc1945">RFC 1945</a>, 1996)</h3>
+                <ul>
+                    <li>Has three methods (GET, POST, HEAD)</li>
+                    <li>Single Connection</li>
+                </ul>
+                
+                <h3 class="versions">HTTP 1.1 ( RFC 2068 1997, RFC 2616 1999, RFC 7230 - <a href="https://tools.ietf.org/html/rfc7235">7235</a> 2014 )</h3>
+                <ul>
+                    <li>It has different versions of RFC yet the older versions were obsoleted by newer versions.</li>
+                    <li>There are five additional methods from the previous version (GET, POST, HEAD, DELETE, PUT, TRACE, CONNECT, OPTIONS).</li>
+                    <li>Connections can be reused unlike the older versions.</li>
+                    <li>Data compression is possible but not in the header.</li>
+                </ul>
+                
+                <h3 class="versions">HTTP 2.0 (<a href="https://tools.ietf.org/html/rfc7540">RFC 7540</a> 2015)</h3>
+                <ul>
+                    <li>It has more storage</li>
+                    <li>Better Bandwidth</li>
+                    <li>Improvement on the communication protocol</li>
+                    <li>Faster internet</li>
+                    <li>Data compression is possible also in header</li>
+                    <li>Server can handle multiple request even though the first request has not yet been responded.</li>
+                </ul>
+            </article>
+            
+            <article id="support">
+                <h2 class="subhead">Support for Different Functionalities</h2>
+                <ul>
+                    <li>Cache Control</li>
+                    <li>Content media type (MIME) specifications</li>
+                    <li>Language and character set specifications</li>
+                    <li>Content/transfer coding</li>
+                    <li>Content Negotiation</li>
+                    <li>Client-Server Protocol negotiation</li>
+                    <li>Persistent Connection</li>
+                    <li>Request Pipelining/ multiplexing</li> <li>Authentication/Autorization</li>
+                </ul>
+            </article>
+            
+            <article id="resource">
+                <h2>Resource Addressing</h2>
+                <p class="textcontent">The HTTP resources are identified using: </p>
+                <ul>
+                    <li>Scheme (http or https)</li>
+                    <li>Authority ( user info, host, or port number)</li>
+                    <li>Path to resource ( static or dynamic resource)</li>
+                    <li>Query ( may be URL encoded)</li>
+                </ul>
+            </article>
+            
+            <article id="methods">
+                <h2>Request Methods</h2>
+                
+                <h3>GET</h3>
+                <p class="textcontent">
+                It is the method that returns the whole HTML document inclding the code.
+                </p>
+                <p class="textcontent">
+                The URL of this method is much longer than POST method ( which will be discussed later) because the message is included in the URL.
+                <!--example of the URL here (SCREENSHOT)-->
+                </p>
+                
+                <h3>POST</h3>
+                <p class="textcontent">
+                Same with GET method, but the URL is much shorter since the message is included in the body not in the URL.
+                </p>
+                <p class="textcontent">
+                Returns an error if you resend the request.
+                </p>
+                
+                <h3>HEAD</h3>
+                <p class="textcontent">
+                Used when requesting for the metadata only without requiring for a payload.
+                </p>
+                
+                <h3>PUT</h3>
+                <p class="textcontent">
+                Generates a resource to the server.
+                </p>
+                
+                <h3>DELETE</h3>
+                <p class="textcontent">
+                Removes a resource in the server.
+                </p>
+                
+                <h3>OPTIONS</h3>
+                <p class="textcontent">
+                Lets you know what you are allowed to do.
+                </p>
+                
+                <h3>TRACE</h3>
+                <p class="textcontent">
+                Request that returns the received message.
+                </p>
+                <p class="textcontent">
+                Assures you that your message is not modified.
+                </p>
+                
+                <h3>CONNECT</h3>
+                <p class="textcontent">
+                Establishes a secure connection and a tunnel.
+                </p>
+            </article>
+            
+            <article id="properties">
+                <h2>Method Properties (Standard Method)</h2>
+                <ul>
+                    <li>Safe methods - there is no change of the state of the server. ( GET, HEAD, OPTIONS, TRACE )</li>
+                    <li>Idempotent methods - even if issued for multiple times, your expectations of what will happen is still the same. ( GET, HEAD, OPTIONS, TRACE, PUT, DELETE )</li>
+                    <li>Cacheable methods - response to a method is allowed to be stored for future reuse. ( GET, HEAD, POST )</li>
+                </ul>
+            </article>
+            
+            <article>
+                <h2>Response Messages</h2>
+                <ul> 
+                    <li>Status Line ( protocol version, status code, reason phrase)</li>
+                    <li>Message Headers</li>
+                </ul>
+                <p class="textcontent">
+                    For more informations about protocols visit <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html">www.w3.org/</a> 
+                </p>
+            </article>
+            
+            <article>
+                <h2>Response Messages</h2>
+                <p class="textcontent">Message headers contain the details on how they are going to communicate.</p>
+            <p class="textcontent">GENERAL HEADER FIELDS (Based in RFC 2616)
+            </p>
             <ul>
                 <li>Cache Control</li>
                 <li>Date</li>
@@ -241,56 +181,70 @@
                 <li>Via</li>
                 <li>Warning</li>
             </ul>
-            <p class="head1">REQUEST HEADERS</p>
-            <ul>
-                <li>Accept</li>
-                <li>Accept-Charset</li>
-                <li>Accept-Encoding</li>
-                <li>Accept-Language</li>
-                <li>Authorization</li>
-                <li>Expect</li>
-                <li>From</li>
-                <li>If-match</li>
-                <li>If-modified-since
-                <li>If-none-match</li>
-                <li>If-range</li>
-                <li>If-unmodified-since</li>
-                <li>Max-forwards</li>
-                <li>Proxy-Authorization</li>
-                <li>Range</li>
-                <li>Referer</li>
-                <li>TE</li>
-                <li>User agent</li>
-            </ul>
-            <p class="head1"><b>ENTITY HEADER FIELDS (Categorized in RF2616; undefined in RFC 7230-7235)</b></p>
-            <ul>
-                <li>Allow</li>
-                <li>Content-Encoding</li>
-                <li>Content-Language</li>
-                <li>Content-Length</li>
-                <li>Content-Location</li>
-                <li>Content-MD5</li>
-                <li>Content-Range</li>
-                <li>Content-Type</li>
-                <li>Expires</li>
-                <li>Last Modified</li>
-            </ul>
-
-            <p class="head" id="C10">HTTP Extensions</p>
-            <p class="head2">Can be extended by defining new request methods, message headers and/or status codes and then implementing servers and/or clients that makes the use of the new functionality.</p>
-            <ul>
-                <li>WEBDAV
-                    <ul>
-                        <li>Web Distributed Authoring and Versioning</li>
-                        <li>Is a HTTP extension that define how COPY, MOVE, DELETE and CREATE are used in HTTP.</li>
-                    </ul>
-                </li>
-                <li>Request Methods
+            </article>
+            
+            
+            <article>
+                <h2>Request Headers</h2>
                 <ul>
-                    <li>LOCK, PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK</li>
+                    <li>Accept</li>
+                    <li>Accept-Charset</li>
+                    <li>Accept-Encoding</li>
+                    <li>Accept-Language</li>
+                    <li>Authorization</li>
+                    <li>Expect</li>
+                    <li>From</li>
+                    <li>If-match</li>
+                    <li>If-modified-since
+                    <li>If-none-match</li>
+                    <li>If-range</li>
+                    <li>If-unmodified-since</li>
+                    <li>Max-forwards</li>
+                    <li>Proxy-Authorization</li>
+                    <li>Range</li>
+                    <li>Referer</li>
+                    <li>TE</li>
+                    <li>User agent</li>
                 </ul>
-                </li>
-            </ul> 
-	</div>      
+            </article>
+            
+            <article>
+                <h2>ENTITY HEADER FIELDS (Categorized in RF2616; undefined in RFC 7230-7235)</h2>
+                <ul>
+                    <li>Allow</li>
+                    <li>Content-Encoding</li>
+                    <li>Content-Language</li>
+                    <li>Content-Length</li>
+                    <li>Content-Location</li>
+                    <li>Content-MD5</li>
+                    <li>Content-Range</li>
+                    <li>Content-Type</li>
+                    <li>Expires</li>
+                    <li>Last Modified</li>
+                </ul>
+            </article>
+            
+            <article>
+                <h2>Extensions</h2>
+                <p class="textcontent">Can be extended by defining new request methods, message headers and/or status codes and then implementing servers and/or clients that makes the use of the new functionality.</p>
+                <ul>
+                    <li>WEBDAV
+                        <ul>
+                            <li>Web Distributed Authoring and Versioning</li>
+                            <li>Is a HTTP extension that define how COPY, MOVE, DELETE and CREATE are used in HTTP.</li>
+                        </ul>
+                    </li>
+                    <li>Request Methods
+                    <ul>
+                        <li>LOCK, PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK</li>
+                    </ul>
+                    </li>
+                </ul> 
+            </article>
+        </section>   
+	</div>
+    <footer>
+        All rights reserved.
+    </footer>
     </body>
 </html>

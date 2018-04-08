@@ -1,10 +1,18 @@
 
 
 body {
-  margin: 0;
-   background-color:#F5F5F5;
+    margin: 0;
+    background-color:hsl(192, 15%, 99%);
 }
 
+.nav, .content {
+    background-color: hsla(192, 15%, 97%, 0.9);
+    margin: 0% 5%;
+    padding: 0.5%;
+}
+article, .textcontent {
+    padding: 0% 3%;
+}
 h1{
 	font-family: Bold;
 	font-size:50px;
@@ -13,9 +21,9 @@ h1{
 	text-align: center;
 }
 
-.topnav {
+footer, .topnav {
   overflow: hidden;
-  background-color: #696969;
+  background-color:rgba(89, 111, 130, 0.7);
   text-align:center;
 }
 
@@ -26,7 +34,7 @@ h1{
   display:inline-block;
   color: white;
   text-align: center;
-  padding: 30px 20px;
+  padding: 15px 25px;
   text-decoration: none;
   font-size: 20px;
 

@@ -23,6 +23,18 @@ body {
     letter-spacing: 9px;
 }
 
+.banner h2 {
+    position: absolute;
+    color: #696969;
+    font-family: Regular;
+    font-size: 80px;
+    margin-left: 80px;
+    margin-top: 100px;
+    animation: fade-in 2s ease;
+    transition: 1s ease;
+    letter-spacing: 9px;
+}
+
 header h1 {
     color: red;
     font-size: 30px;
@@ -44,8 +56,9 @@ nav {
 
 nav a {
     color: #696969;
+	font-family: Regular;
     transition: 0.5s;
-    animation: fade-in 5s ease-in;
+    animation: fade-in 8s ease-in;
     font-size: 75px;
 	text-decoration: none;
 }

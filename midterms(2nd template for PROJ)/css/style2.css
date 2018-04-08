@@ -5,7 +5,7 @@ body {
     background: url(../pictures/background.png);
 }
 
-.nav, .content {
+.nav, .heading, .content {
     background-color: hsla(28, 80%, 90%, 0.7);
     margin: 0% 5%;
     padding: 0.5%;
@@ -13,6 +13,17 @@ body {
 article, .textcontent {
     padding: 0% 3%;
 }
+
+.textcontent1  {
+	font-family: cursive;
+	color: gray;
+	text-indent: 30px;
+	padding: 0% 3%;
+	letter-spacing:1.5px;
+}	
+
+
+
 h1{
 	font-family: Bold;
 	font-size:50px;
@@ -31,7 +42,7 @@ footer , .topnav {
   font-family: Regular;
   letter-spacing:2.2px;
   float: left;
-  display:inline-block;
+  display:inline;
   color: white;
   text-align: center;
   padding: 15px 25px;
@@ -40,11 +51,31 @@ footer , .topnav {
 
 }
 
+.navcontainer {
+	
+	
+}
 .topnav a:hover {
   background-color: #F5F5F5;
   color: black;
   
 }
+
+article{
+	background-color:rgba(89, 111, 130, 0.1);
+	border-radius: 10px;
+	padding: 10px 20px;
+	margin: 10px 0px;
+	width: auto;
+}
+	
+.topics {
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+
+
 
 
 

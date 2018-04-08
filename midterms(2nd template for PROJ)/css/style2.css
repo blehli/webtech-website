@@ -1,5 +1,4 @@
 
-
 body {
     margin: 0;
     background: url(../pictures/background.png);
@@ -14,15 +13,20 @@ article, .textcontent {
     padding: 0% 3%;
 }
 
+#urlsample {
+    width: 50vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .textcontent1  {
 	font-family: cursive;
-	color: gray;
+	color: #2C3E50;
 	text-indent: 30px;
 	padding: 0% 3%;
 	letter-spacing:1.5px;
 }	
-
-
 
 h1{
 	font-family: Bold;
@@ -33,9 +37,9 @@ h1{
 }
 
 footer , .topnav {
-  overflow: hidden;
-  background-color:rgba(89, 111, 130, 0.7);
-  text-align:center;
+    overflow: hidden;
+    background-color:rgba(89, 111, 130, 0.7);
+    text-align:center;
 }
 
 .topnav a {
@@ -50,7 +54,29 @@ footer , .topnav {
   font-size: 20px;
 
 }
+#methods p, #methods h3{
+    margin: 7.3px 0px;
+    padding: 0px 0px;
+}
 
+ul {
+    font-family: regular;
+    padding-left: 4vw;
+    color: 
+}
+
+h2{
+    font-family: bold;
+}
+
+.textcontent {
+    text-indent: 15px;
+    font-family: regular;
+}
+
+h3 {
+    font-family: regular;
+}
 .navcontainer {
 	
 	
@@ -74,11 +100,6 @@ article{
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
 }
-
-
-
-
-
 
 @font-face {
 	font-family: "Regular";

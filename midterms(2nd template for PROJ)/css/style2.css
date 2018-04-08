@@ -6,7 +6,7 @@ body {
 }
 
 .nav, .content {
-    background-color: hsla(192, 15%, 97%, 0.9);
+    background-color: hsla(28, 80%, 90%, 0.9);
     margin: 0% 5%;
     padding: 0.5%;
 }
@@ -21,7 +21,7 @@ h1{
 	text-align: center;
 }
 
-footer, .topnav {
+.topnav {
   overflow: hidden;
   background-color:rgba(89, 111, 130, 0.7);
   text-align:center;

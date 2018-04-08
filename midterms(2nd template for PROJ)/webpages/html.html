@@ -24,16 +24,18 @@
 
 		<!--HTML CONTENT-->
         <div class="content">
-            <h2 id="C1">HyperText Markup Language</h2>
-				<ul>
-                    <li>Application of Standard Generalized Markup Language or SGML (ISO 8879)</li>
-                    <li>Structure & content of web pages</li>
-                    <li>Today, HTML is for semantic specifications of the webpage structure and content with presentational aspects being delegated to stylesheets.</li>
-                    <li>Initially developed at CERN, then IETF, then W3C and WHATWG</li>
-				</ul>
-            <div class="history" >
-                <h2 id="C2">Version History</h2>
-                <h3>Pre standardization:</h3>
+            <section class="topics">
+                <h1>HyperText Markup Language</h1>
+                <p class="textcontent">
+                    Hypertext Markup Language is an applicaton of Standard Generalize Markup Language (SGML). It is used to form the structure of web pages and its contents. Initially developed at CERN, then IETF, then W3C and WHATWG
+                </p>
+                <p class="textcontent">
+                    Today, HTML is for semantic specifications of the webpage structure and content with presentational aspects being delegated to stylesheets.
+                </p>
+                
+                <article class="history">
+                    <h2>Version History</h2>
+                    <h3>Pre standardization:</h3>
                     <ul>
                     <li>HTML tags by Tim Berners-Lee, late 1991</li>
                     <li>HTML tags, Internet Draft, by Tim Berners-Lee and Dan Connolly at IETF, mid 1993</li>
@@ -92,65 +94,74 @@
                         <li>&lt;style></li>
                         </ul>
                     </ul>
-            </div>
-			<h2 id="C3">HTML Document Structure</h2>
-            <ul>
-			<li>Version information - contains the information of html version that you have used. (i.e. &lt;!DOCTYPE html>) </li>
-            <li>Root - it contains different tags that will be in your webpage. (&lt;html> &lt;/html>)
-                <ul>
-                    <li>"&lt;head> &lt;/head>" - it is where you can put the title, metadata, some links (stylesheet, icon, etc.)</li>
-                    <li>"&lt;body> &lt;/body>" - it defines the body of the document. It is where the contents of  your html is places. ( text, images, links, and etc.)</li>  
-                </ul>
-			</li>
-            <li>Document Type Declarations</li>
-            <li>Elements
-				<ul>
-                    <li>Tags</li>
-				    <li>Content</li>
-				    <li>Attributes and Attribute Values
+                </article>
+                
+                <article>
+                    <h2>Document Structure</h2>
                     <ul>
-                        <li>Global Attributes</li>
-				        <li>Custom Non-Visible data attribute</li>
-				        <li>WAI-ARIA attributes</li>
-				        <li>Element specific attribute</li>
-                    </ul>
-                    </li>
-				</ul>
-            <li><a href="https://dev.w3.org/html5/spec-preview/references.html#refsMATHML">MATHML</a>
-                <ul>
-                    <li>Mathematical Markup Language</li>
-                    <li>Allows you to add mathematical symbols/ notations properly</li>
-                </ul>    
-            </li>
-            <li><a href="https://dev.w3.org/html5/html-author/charref">Character References</a>
-                <ul>
-                    <li>These are character representations that is preceded with & and ended with ;</li>
-                </ul>
-            </li>
+                        <li>Version information - contains the information of html version that you have used. (i.e. &lt;!DOCTYPE html>) </li>
+                        <li>Root - it contains different tags that will be in your webpage. (&lt;html> &lt;/html>)
+                            <ul>
+                                <li>"&lt;head> &lt;/head>" - it is where you can put the title, metadata, some links (stylesheet, icon, etc.)</li>
+                                <li>"&lt;body> &lt;/body>" - it defines the body of the document. It is where the contents of  your html is places. ( text, images, links, and etc.)</li>  
+                            </ul>
+                        </li>
+                        <li>Document Type Declarations</li>
+                        <li>Elements
+                            <ul>
+                                <li>Tags</li>
+                                <li>Content</li>
+                                <li>Attributes and Attribute Values
+                                <ul>
+                                    <li>Global Attributes</li>
+                                    <li>Custom Non-Visible data attribute</li>
+                                    <li>WAI-ARIA attributes</li>
+                                    <li>Element specific attribute</li>
+                                </ul>
+                                </li>
+                            </ul>
+                        <li><a href="https://dev.w3.org/html5/spec-preview/references.html#refsMATHML">MATHML</a>
+                            <ul>
+                                <li>Mathematical Markup Language</li>
+                                <li>Allows you to add mathematical symbols/ notations properly</li>
+                            </ul>    
+                        </li>
+                        <li><a href="https://dev.w3.org/html5/html-author/charref">Character References</a>
+                            <ul>
+                                <li>These are character representations that is preceded with & and ended with ;</li>
+                            </ul>
+                        </li>
 
-                <li>Comments
-                    <ul>
-                        <li>&lt;!-- --></li>
-                        <li>Some comments have different function just like in java where they have javadoc</li>
+                        <li>Comments
+                            <ul>
+                                <li>&lt;!-- --></li>
+                                <li>Some comments have different function just like in java where they have javadoc</li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-			</ul>
-			<h2 id="C4">HTML Preprocessors</h2>
-			<p>
-				These are some of the tools that can be used to convert html template into actual html codes. <br/>
-				There are 5 best html preprocessors listed by www.slant.co, and these are:
-            </p>
-				<a href="https://www.slant.co/topics/5427/viewpoints/2/~html-preprocessors~pug-previously-jade">Pug </a><br/>
-                <a href="https://www.slant.co/topics/5427/viewpoints/4/~html-preprocessors~handlebars-js">
-				Handlebar.js</a><br/>
-                <a href="https://www.slant.co/topics/5427/viewpoints/3/~html-preprocessors~slim">Slim</a><br/>
-				<a href="https://www.slant.co/topics/5427/viewpoints/1/~html-preprocessors~haml">HAML</a><br/> 
-				To learn more about how HAML is used , visit <a href="https://learn.shayhowe.com/advanced-html-css/preprocessors/">learn.shayhowe.com</a><br/> 
-				<a href="https://www.slant.co/topics/5427/viewpoints/5/~html-preprocessors~macdom">Macdom</a>
-				<br/>
-                <br/>
-                Reference : <a href="https://www.slant.co/topics/5427/~html-preprocessors">https://www.slant.co/topics/5427/~html-preprocessors</a>
+                </article>
+                
+                <article>
+                    <h2>Preprocessors</h2>
+                    <p class="textcontent">
+                        These are some of the tools that can be used to convert html template into actual html codes. <br/>
+                        There are 5 best html preprocessors listed by www.slant.co, and these are:
+                    </p>
+                        <ul>
+                            <li><a href="https://www.slant.co/topics/5427/viewpoints/2/~html-preprocessors~pug-previously-jade">Pug </a></li>
+                            <li><a href="https://www.slant.co/topics/5427/viewpoints/4/~html-preprocessors~handlebars-js">
+                        Handlebar.js</a></li>
+                            <li><a href="https://www.slant.co/topics/5427/viewpoints/1/~html-preprocessors~haml">HAML</a></li>
+                            <li><a href="https://www.slant.co/topics/5427/viewpoints/3/~html-preprocessors~slim">Slim</a><br/>
+                        </li>
+                            <li><a href="https://www.slant.co/topics/5427/viewpoints/5/~html-preprocessors~macdom">Macdom</a></li>
+                        </ul>
+                    <p class="textcontent"> Reference : <a href="https://www.slant.co/topics/5427/~html-preprocessors">https://www.slant.co/topics/5427/~html-preprocessors</a> </p>
+                </article>
+            </section>
         </div>
-	
+        <footer>
+            All rights reserved.
+        </footer>
     </body>
 </html>

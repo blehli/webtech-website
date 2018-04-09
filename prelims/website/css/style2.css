@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    background-color: #FAFAD2;
+}
+
+.title {
+    top: 0;
+    height: 70px;
+    background-color: #BDB76B;
+    position:relative;
+    
+}
+
+.title a {
+	text-decoration:none;
+    color: white;
+    font-family: great;
+	font-size:45px;
+    font-weight: 500;
+	transition: 0.5s;
+    animation: fade-in 5s ease-in;
+	margin-left: 10px;
+    margin-top: 20px;
+}
+
+.title a :hover{
+	color:  #FFE4B5;
+}
+
+
+
+.menu_bar ul {
+    width: 100%;
+    top: 70px;
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EEE8AA;
+	font-size:20px;
+	font-weight:bold;
+	text-shadow: 1px 1px #5D6D7E; 
+}
+
+.menu_bar li {
+    float: left;
+}
+
+.menu_bar li a {
+    display: block;
+    color: darkgoldenrod;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu_bar li a:hover:not(.active) {
+    background-color: #FFE4B5;
+}
+
+.active {
+    background-color: #FFE4B5;
+}
+
+.content, .about {
+    margin-top: 70px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+p.head{
+font-family:Veranda;
+font-size:40px;
+position:relative;
+}
+
+p.head1{
+font-style:Veranda;
+font-size:20px;
+position:relative;
+}
+p.head2{
+font-style:Veranda;
+font-size:15px;
+position:relative;
+}
+
+.about {
+    text-align: center;
+    font-size: 20px;
+}
+
+.about img {
+    height: 300px;
+    width: 350px;
+    border-radius: 25px;
+}
+
+.about h3 {
+    color: black;
+    font-family: "Open Sans";
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/Open_Sans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+	font-family: "great";
+	src: url("fonts/PoiretOne-Regular.ttf");
+}
+
+@font-face {
+	font-family: "ques";
+	src: url("fonts/Questrial-Regular.ttf");
+}
+
+@font-face {
+	font-family: "sati";
+	src: url("fonts/Satisfy-Regular.ttf");
+}
+html {
+    font-family: ques;
+}

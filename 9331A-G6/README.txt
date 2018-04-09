@@ -10,4 +10,4 @@ HOW TO ACCESS THE WEBSITE
 	4. You will see the Course Title different chapters corresponding to different terms.
 	5. When you click one of the chapters, you will be directed to the page that has different topics.
 	6. You can use the top text that represents the term that will lead you back to the index.
-	
+	7. The third chapter cannot be accessed yet since it will be for the final term.

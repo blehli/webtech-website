@@ -91,13 +91,130 @@
                         <li>May begin with a universal selector (*) which is not necessarily typed or a type selector.</li>
                         <li>Cannot contain other type selectors or universal selector.</li>
                     </ul>
-                    <h3></h3>
+                    <h3>Selector Group</h3>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>A comma separated list of selectors representing the union of all element.</li>
+                    </ul>
+					<h3>Combinators</h3>
+					<ul>
+						<li>These are the symbols thats can be used to refer to an element in your html document.</li>
+                        <li>Some of these are:</li>
+						<ul>
+							<li>Descendant Combinator ( whitespace )</li>
+							<li>Child Combinator ( > ) </li>
+						</ul>
                     </ul>
                 </article>
+				
+				<article>
+					<h2>Rule Presedence</h2>
+					<p class="textcontent">
+					An HTML element maybe a subject of selectors of multiple style rules. When such rule target different properties, their effects cascade or are combined.But when the styles involve the same property, a conflict will arise as to what property should be applied. 
+					</p>
+					<p class="textcontent">
+					<b>Note:</b> The conflict must be resolved such that only one style must be applied.
+					</p>
+					<h3>Some factors which affect the precedence of CSS Statements.</h3>
+					<ul>
+						<li>Origin and Importance</li>
+                        <li>Specificity</li>
+                    </ul>
+				</article>
+				
+				<article>
+					<h2>Properties</h2>
+					<h3>Vendor-specific extensions</h3>
+					<ul>
+						<li>Also known as Vendor Prefixes</li>
+                        <li>It is used by browser vendors as a prefix for the names of experimental or non standard css properties; lately, vendor are moving away from vendor prefixes in favor of user controlled flags or preferences.</li>
+						<li>examples: -webkit-, -moz-, -o- </li>
+						<li>It is recommended that all the prefixes will be included to your site</li>
+                    </ul>
+					<h3>Custom-Properties : css variables [experimental]</h3>
+					<ul>
+					<li>If the variable cannot be used, it will use the alternative</li>
+					</ul>
+				</article>
+				<article>
+					<h2>Values</h2>
+					<h3>Value Processing</h3>
+					<ul>
+						<li>declared(explicitly specified), cascaded, specified, computed, used, actual values</li>
+					</ul>
+					<h3>Value Types</h3>
+					<ul>
+						<li>Keywords</li>
+						<li>CSS-wide Keywords</li>
+							<ul>
+							<li>initial - default</li> 
+							<li>inherit - inherits the attribute of the parent tag</li>
+							<li>Unset - inheriit the attribute of the parent tag if there is any, otherwise, it use the default</li>
+							</ul>
+						<li>Property Specific - there are values that can be inherited and there are some that cannot be.</li>
+						<li>Numbers</li>
+						<li>Dimensions (length, angle, duration(or time), frequency, resolution)</li>
+					</ul>
+				</article>
+				<article>
+					<h2>Units</h2>
+					<h3>length</h3>
+					<ul>
+						<li>Font-relative: em, ex, ch, rem</li>
+						<li>Absolute: cm, mm, in, pt, pc, px</li>
+					</ul>
+					<h3>angle</h3>
+					<ul>
+						<li>deg, grad, rad, turn</li>
+						<li>Used in some gradient and transformed funtions</li>
+					</ul>
+					<h3>duration</h3>
+					<ul>
+						<li>s, ms</li>
+						<li>Used in animation</li>
+					</ul>
+					<h3>frequency</h3>
+					<ul>
+						<li>Hz ,kHz</li>
+						<li>Initially introduced in CSS2</li>
+					</ul>
+					<h3>resolution</h3>
+					<ul>
+						<li>dpi, dpcm</li>
+					</ul>
+					<h3>percentages</h3>
+					<ul>
+						<li>a number with a symbol % suffix</li>
+						<li>URL's and URI's</li>
+						<li>url() funtions with absolute and relative relative parameter
+					</ul>
+					<h3>colors</h3>
+					<ul>
+						<li>color keywords (ex. red)</li>
+						<li>Hexadecimal (ex. #f5f5f5)</li>
+						<li>RGB () (red, green, blue)</li>
+						<li>HSL () (hue, saturation, lightness)</li>
+						<li>current color, transparent</li>
+					</ul>
+					<h3>strings</h3>
+					<ul>
+						<li>delimited by single '' or ""</li>
+					</ul>
+					<h3>functions</h3>
+					<ul>
+						<li>contains arguments that sometimes have required values</li>
+						<li>Used in some gradient and transformed funtions</li>
+					</ul>
+				</article>
+				<article>
+					<h2>Preprocessors</h2>
+					<p class="textcontent">Converts non-CSS  statements into actual stylesheet</p>
+					<h3>examples</h3>
+					<ul>
+						<li>Sass - Syntatically Awesome Stylesheet</li>
+						<li>Less</li>
+					</ul>
+
+				</article>
             </section>
         </div>
         <footer>
